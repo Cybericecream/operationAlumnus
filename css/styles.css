@@ -62,6 +62,19 @@ header {
   background: none;
   color: #000000;
   font-weight: bold; }
+  .fullscreen-image-slider .orbit-caption p {
+    line-height: .1em; }
+  .fullscreen-image-slider .orbit-caption h2 {
+    font-size: 2em;
+    line-height: .8em; }
+  .fullscreen-image-slider .orbit-caption .joinNowButton {
+    color: #CC3333;
+    border: solid 0.1em #CC3333;
+    border-radius: .3em;
+    padding: 0 .3em; }
+    .fullscreen-image-slider .orbit-caption .joinNowButton:hover {
+      background-color: #CC3333;
+      color: #FFFFFF; }
   .fullscreen-image-slider .orbit-caption figcaption {
     display: block;
     background-color: blue; }

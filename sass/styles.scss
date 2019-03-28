@@ -79,9 +79,27 @@ header {
     background: none;
     color: $primaryText;
     font-weight: bold;
+    p{
+      line-height: .1em;
+    }
+    h2{
+      font-size: 2em;
+      line-height: .8em;
+    }
+    .joinNowButton {
+      color: $accentText;
+      border: solid 0.1em $accentColour;
+      border-radius: .3em;
+      padding: 0 .3em;
+      &:hover {
+        background-color: $accentColour;
+        color: $secondaryText;
+      }
+    }
     figcaption {
       display: block;
       background-color: blue;
+
     }
 
   }

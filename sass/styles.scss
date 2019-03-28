@@ -1,0 +1,92 @@
+$primaryText: #000000;
+$secondaryText: #FFFFFF;
+$accentText: #CC3333;
+
+$primaryColour: #FFFFFF;
+$secondaryColour: #000000;
+$accentColour: #CC3333;
+$depthColour: #F5F8FB;
+
+@font-face {
+  font-family: TH Sarabun New;
+  font-weight: 200;
+    src: url(/assets/fonts/THSarabunNew.ttf) format('truetype');
+  }
+
+body{
+  font-family: TH Sarabun New;
+  font-size: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: TH Sarabun New;
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+  background-color: $primaryColour;
+  box-shadow: 10px 10px 5px 0 $depthColour;
+}
+.top-bar, .top-bar ul{
+  background: none;
+}
+.top-bar {
+  color: $primaryText;
+  a {
+    color: $primaryText;
+    font-weight: 200;
+  }
+  i {
+    color: $primaryText;
+  }
+}
+.search {
+  display: inline-block;
+  height: 2.5em;
+  background-color: green;
+  padding: .4em;
+  border-radius: 1.5em;
+  .searchBox {
+    width: 0em;
+    transition: all .2s ease-in-out;
+    margin-left: 0.6em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  .searchButton {
+    margin: 0 .5em;
+
+  }
+  &:hover {
+    background-color: red;
+    .searchBox {
+      width: 12em;
+    }
+  }
+}
+
+.fullscreen-image-slider {
+  .orbit-image {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .orbit-caption {
+    bottom: 50%;
+    transform: translateY(50%);
+    background: none;
+    color: $primaryText;
+    font-weight: bold;
+    figcaption {
+      display: block;
+      background-color: blue;
+    }
+
+  }
+  .demo {
+    background-color: blue;
+    height: 200px;
+  }
+}

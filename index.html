@@ -12,23 +12,70 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="top-bar">
-          <ul class="menu top-bar-left">
-            <li class="menu-text"><a href="">Site Title</a></li>
-            </ul>
-          <ul class="menu top-bar-right">
-            <li class="menu-text"><a href="">Option 1</a></li>
-            <li class="menu-text"><a href="">Option 2</a></li>
-            <li class="menu-text"><a href="">Option 3</a></li>
-            </ul>
+    <header class="sticky">
+      <div class="grid-x">
+        <div class="cell large-8 large-offset-2 top-bar-container" data-sticky-container>
+          <div class=" sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+            <div class="top-bar">
+              <div class="top-bar-left">
+                <ul class="menu">
+                  <li class="menu-text">Site Title</li>
+                </ul>
+              </div>
+              <div class="top-bar-right">
+                <ul class="dropdown menu" data-dropdown-menu>
+                  <li><a href="#">One</a></li>
+                  <li><a href="#">Two</a></li>
+                  <li><a href="#">Three</a></li>
+
+                  <!-- <li><div class="search"><input class="searchBox" placeholder="Search"><button type="button" class=" searchButton"><i class="fas fa-search"></i></button></div></li> -->
+
+                </ul>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
     </header>
+
+    <div class="fullscreen-image-slider">
+      <div class="orbit" role="region" aria-label="FullScreen Pictures" data-orbit>
+        <ul class="orbit-container">
+          <button class="orbit-previous">
+            <span class="show-for-sr">Previous Slide</span>
+            <span class="nav fa fa-chevron-left fa-1x"></span>
+          </button>
+          <button class="orbit-next">
+            <span class="show-for-sr">Next Slide</span>
+            <span class="nav fa fa-chevron-right fa-1x"></span>
+          </button>
+          <li class="is-active orbit-slide">
+            <img class="orbit-image" src="images/banner1.png" alt="Space">
+            <figcaption class="orbit-caption">
+              <div class="cell large-8 large-offset-2">
+                <p>Welcome.</p>
+                <h2>North Metropolitan<br />TAFE Alumni</h2>
+                <a>JOIN NOW</a>
+              </div>
+            </figcaption>
+            <!-- <div class="grid-x">
+              <figcaption class="cell large-8 demo">
+
+              </figcaption>
+
+            </div> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
 
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/search.js"></script>
   </body>
 </html>
